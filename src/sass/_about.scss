@@ -56,14 +56,14 @@
 		@include section-title;
 	}
 	&__subtitle {
-		font-family: "Roboto Slab";
+		font-family: "Roboto Slab", sans-serif;
 		font-size: 28px;
 		font-weight: 300;
 		margin-top: 10px;
 	}
 	&__descr {
 		color: #515254;
-		font-family: "Roboto Slab";
+		font-family: "Roboto Slab", sans-serif;
 		font-size: 22px;
 		font-weight: 300;
 		margin-top: 60px;

@@ -1,10 +1,12 @@
 .reviews {
     background-color: #f8f8f8;
     padding: 120px 0;
+
     &__inner {
         display: flex;
         // justify-content: space-between;
     }
+
     &__squares {
         display: flex;
         flex-direction: column;
@@ -19,9 +21,11 @@
             display: block;
             border-radius: 50%;
             position: relative;
+
             &:nth-child(2) {
                 width: 112px;
                 height: 112px;  
+
                 &::after {
                     content: '';
                     width: 1px;
@@ -35,26 +39,31 @@
             }
         }
     }
+
     &__info {
         width: 830px;
         margin-left: 180px;
     }
+
     &__title {
         @include section-title;
     }
+
     &__descr {
         color: #515254;
-        font-family: "Roboto Slab";
+        font-family: "Roboto Slab", sans-serif;
         font-size: 23px;
         font-weight: 300;
         margin-top: 50px;
     }
+
     &__author {
         color: #171717;
         font-size: 21px;
         font-weight: 600;
         margin-top: 75px;
     }
+    
     &__city {
         color: #313131;
         font-size: 17px;

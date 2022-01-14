@@ -2,16 +2,18 @@
 	padding: 120px 0;
 	overflow: hidden;
 	position: relative;
+
 	&__title {
 		@include section-title;
 		text-align: center;
 	}
+
 	&__carousel {
 		margin-top: 40px;
 		display: flex;
+
 		&::before {
 			content: '';
-			
 			display: block;
 			background-color: $main-color;
 			width: 100px;
@@ -23,6 +25,7 @@
 			cursor: pointer;
 			text-align: center;
 		}
+
 		&::after {
 			content: '\f054';
 			font-family: FontAwesome;
@@ -33,6 +36,7 @@
 			cursor: pointer;
 		}
 	}
+	
 	&__item {
 		box-shadow: 0 8px 8px rgba(0, 0, 0, 0.04);
 		border-radius: 3px;
@@ -40,9 +44,11 @@
 		margin-right: 20px;
 		cursor: pointer;
 		padding-bottom: 30px;
+
 		&:hover {
 			box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.3);
 		}
+
 		&-date {
 			color: $main-color;
 			font-size: 15px;
@@ -50,15 +56,17 @@
 			margin-top: 25px;
 			padding-left: 30px;
 		}
+
 		&-title {
 			font-size: 22px;
 			font-weight: 400;   
 			padding-left: 30px;
 			margin-top: 15px;
 		}
+
 		&-descr {
 			color: #5d5d5d;
-			font-family: "Roboto Slab";
+			font-family: "Roboto Slab", sans-serif;
 			font-size: 20px;
 			font-weight: 300;
 			padding-left: 30px;

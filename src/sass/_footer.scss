@@ -2,6 +2,7 @@
 .footer {
     background-color: #f1f1f1;
     position: relative;
+
     &::before {
         content: '';
         display: block;
@@ -11,13 +12,17 @@
         position: absolute;
         bottom: 90px;
     }
+
     &__top {
         padding: 90px 0 70px 0;
         display: flex;
         justify-content: space-between;
+
         &-block {
             position: relative;
+
             &:first-child {
+
                 &:before {
                     content: '';
                     border-right: 1px solid black;
@@ -35,27 +40,34 @@
             width: 170px;
             height: 46px;
         }
+
         &-descr {
-            font-family: "Roboto Slab";
+            font-family: "Roboto Slab", sans-serif;
             font-size: 19px;
             font-weight: 300;
         }
+
         &-socials {
             margin-top: 25px;
+
             .fab {
                 font-size: 40px;
                 margin-right: 20px;
             }
+
             .fa-facebook-square {
                 color: #274d96;
             }
+
             .fa-twitter-square {
                 color: #19a0e2;
             }
+
             .fa-instagram-square {
                 color: #797979;
             }
         }
+
         &-wh-title {
             font-size: 22px;
             font-weight: 600;
@@ -63,38 +75,45 @@
             // line-height: inherit;
             width: 360px;
         }
+
         &-wh-info {
-            font-family: "Roboto Slab";
+            font-family: "Roboto Slab", sans-serif;
             font-size: 18px;
             font-weight: 300;
             line-height: 50px;
             margin-top: 20px;
+
             span {
-                font-family: "Roboto Slab";
+                font-family: "Roboto Slab", sans-serif;
                 font-size: 18px;
                 font-weight: 300;
                 float: right;
             }
+
         }
+
         &-subscribe-title {
             font-size: 22px;
             font-weight: 600;
             text-transform: uppercase;
             width: 360px;
         }
+
         .subscribe {
             margin-top: 40px;
             position: relative;
+
             input {
                 width: 330px;
                 height: 50px;
                 border-radius: 26px;
                 border: 1px solid #d7d7d7;
-                font-family: "Roboto Slab";
+                font-family: "Roboto Slab", sans-serif;
                 font-size: 17px;
                 font-weight: 300;
                 padding-left: 40px;
             }
+
             button {
                 width: 178px;
                 height: 50px;
@@ -118,6 +137,7 @@
         display: flex;
         justify-content: space-between;
     }
+    
     &__nav {
         display: flex;
         list-style-type: none;

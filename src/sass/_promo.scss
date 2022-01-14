@@ -6,15 +6,18 @@
 	justify-content: center;
 	margin: 0 auto;
 	padding-top: 125px;
+
 	&__img {
 		background-image: url(../img/3-layers-top.png);
 		background-repeat: no-repeat;
 		width: 688px;
 		height: 548px;
 	}
+
 	&__content {
 		margin-top: 40px;
 		width: 550px;
+
 	   &__title {
 			width: 555px;
 			height: 112px;
@@ -23,25 +26,29 @@
 			letter-spacing: -1.88px;
 			line-height: 50px;
 			text-transform: uppercase;
+
 			span {
 				font-size: 57px;
 				letter-spacing: -1.43px;
 				line-height: 58px;
 			}
 	   }
+
 	   &__descr {
 			width: 480px;
 			height: 61px;
 			color: #515254;
-			font-family: "Roboto Slab";
+			font-family: "Roboto Slab", sans-serif;
 			font-size: 28px;
 			font-weight: 300;
 			margin-top: 40px;
 	   }
+
 	   &__items {
 		   display: flex;
 		   justify-content: space-between;
 		   width: 410px;
+
 		   .content__item {
 				width: 180px;
 				height: 192px;
@@ -56,6 +63,7 @@
 		   }
 	   }
 	}
+	
 	&__img {
 		width: 690px;
 	}

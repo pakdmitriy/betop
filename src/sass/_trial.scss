@@ -1,32 +1,39 @@
 .trial {
 	padding: 120px 0;
+
 	&__inner {
 		display: flex;
 		position: relative;
 	}
+
 	&__img {
 		position: absolute;
 		left: -120px;
 		top: 100px;
 	}
+
 	&__block {
 		margin-left: 600px;
 	}
+
 	&__title {
 		@include section-title;
 	}
+
 	&__descr {
 		color: #515254;
-		font-family: "Roboto Slab";
+		font-family: "Roboto Slab", sans-serif;
 		font-size: 26px;
 		font-weight: 300;
 		line-height: 38px;
 		margin-top: 20px;
 	}
+
 	&__form {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+
 		input {
 			width: 270px;
 			margin-top: 60px;
@@ -35,7 +42,7 @@
 			border: 2px solid #d8d8d8;
 			padding-left: 30px;
 			color: #515254;
-			font-family: "Roboto Slab";
+			font-family: "Roboto Slab", sans-serif;
 			font-size: 17px;
 			font-weight: 300;
 			&:first-child {
@@ -44,15 +51,18 @@
 		}
 	}
 	&__prefer {
+
 		&-title {
 			font-size: 20px;
 			font-weight: 500;
 			margin-top: 50px;
 		}
+
 		&-items {
 			margin-top: 30px;
 			display: flex;
 			justify-content: space-between;
+
 			input {
 				position: absolute;
 				opacity: 0;
@@ -63,11 +73,8 @@
 					display: none;
 				}
 			}
-			label {
-				&:hover {
-					border: 5px solid #d8d8d8;
 
-				}
+			label {
 				cursor: pointer;
 				width: 118px;
 				height: 104px;
@@ -75,10 +82,16 @@
 				border: 2px solid #d8d8d8;
 				display: block;
 				padding-top: 22px;
+
+				&:hover {
+					border: 5px solid #d8d8d8;
+				}
+
 				img {
 					margin: 0 auto;
 					display: block;
 				}
+
 				span {
 					color: #313131;
 					font-size: 14px;
@@ -98,6 +111,7 @@
 			color: #ffffff;
 			font-size: 19px;
 			font-weight: 500;
+			
 			&::after {
 				content: '\f054';
 				font-family: FontAwesome;

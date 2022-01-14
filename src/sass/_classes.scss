@@ -2,6 +2,7 @@
 	position: relative;
 	border-bottom: 1px solid #eee;
 	height: 540px;
+
 	&__inner {
 		display: flex;
 		// align-items: center;
@@ -9,6 +10,7 @@
 		top: 125px;
 		// left: 50%;
 	}
+
 	.yellow-bg {
 		position: absolute;
 		left: -870px;
@@ -16,23 +18,27 @@
 		height: 540px;
 		z-index: -10;
 	}
+
 	&__title {
 		@include section-title;
 		line-height: 33.28px;
 		width: 162px;
 	}
+
 	&__descr {
 		width: 216px;
 		height: 88px;
 		color: #332d22;
-		font-family: "Roboto Slab";
+		font-family: "Roboto Slab", sans-serif;
 		font-size: 22px;
 		font-weight: 300;
 		margin-top: 30px;    
 	}
+
 	&__slide {
 		display: flex;
 		margin-left: 80px;
+
 		.slide__item {
 			background-image: url(../img/slide-item.png);
 			width: 270px;
@@ -41,6 +47,7 @@
 			display: flex;
 			align-items: center;
 			position: relative;
+
 			.item__price {
 				width: 64px;
 				height: 58px;
@@ -56,6 +63,7 @@
 				bottom: 20px;
 				line-height: 15px;
 			}
+			
 			.item__title {
 				margin-left: 64px;
 				position: absolute;
