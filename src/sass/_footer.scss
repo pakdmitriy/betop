@@ -53,6 +53,7 @@
             .fab {
                 font-size: 40px;
                 margin-right: 20px;
+                cursor: pointer;
             }
 
             .fa-facebook-square {
@@ -143,10 +144,14 @@
         list-style-type: none;
         &-item {
             margin-right: 50px;
+
             a {
                 color: #000000;
                 font-size: 18px;
                 font-weight: 400;
+                &:hover {
+                    color: $main-color;
+                }
             }
         }
     }

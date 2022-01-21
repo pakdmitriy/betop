@@ -47,6 +47,12 @@
 			display: flex;
 			align-items: center;
 			position: relative;
+			cursor: pointer;
+			&:hover {
+				.item__title {
+					color: $main-color;
+				}
+			}
 
 			.item__price {
 				width: 64px;

@@ -60,6 +60,10 @@
 				padding-top: 120px;
 				font-size: 19px;
 				font-weight: 400;
+				cursor: pointer;
+				&:hover {
+					color: $main-color;
+				}
 		   }
 	   }
 	}
