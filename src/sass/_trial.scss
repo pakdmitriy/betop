@@ -112,6 +112,10 @@
 			font-size: 19px;
 			font-weight: 500;
 			cursor: pointer;
+			&:hover {
+				background-color: $main-color;
+				border: none;
+			}
 			&::after {
 				content: '\f054';
 				font-family: FontAwesome;

@@ -39,9 +39,12 @@
 		display: flex;
 		margin-left: 80px;
 
+		width: 800px;
+		
+
 		.slide__item {
 			background-image: url(../img/slide-item.png);
-			width: 270px;
+			min-width: 240px;
 			height: 300px;
 			margin-right: 30px;
 			display: flex;
@@ -57,7 +60,7 @@
 			.item__price {
 				width: 64px;
 				height: 58px;
-				box-shadow: 0 28px 35px rgba(0, 0, 0, 0.48);
+				box-shadow: 0 2px 2px rgba(0, 0, 0, 0.48);
 				border-radius: 4px;
 				background-color: #ffffff;
 				padding: 15px 0 0 15px;

@@ -64,6 +64,12 @@
 				&:hover {
 					color: $main-color;
 				}
+				&-left {
+					background-image: url(../img/box_06.png);
+				}
+				&-right {
+					background-image: url(../img/box2_06.png);
+				}
 		   }
 	   }
 	}

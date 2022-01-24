@@ -15,16 +15,16 @@
         align-items: center;
         
         span {
-            width: 76px;
-            height: 76px;
+            width: 76px !important;
+            height: 76px !important;
             background-color: #979797;
             display: block;
             border-radius: 50%;
             position: relative;
 
             &:nth-child(2) {
-                width: 112px;
-                height: 112px;  
+                width: 112px !important;
+                height: 112px !important;  
 
                 &::after {
                     content: '';

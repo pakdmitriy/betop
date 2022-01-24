@@ -10,7 +10,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
 </head>
 <body>
 	<header>
@@ -60,8 +61,8 @@
 					</li>
 
 				</ul>
-				<button class="header__button cart">Cart</button>
-				<button class="header__button login">Login</button>
+				<button class="header__button cart" id="cartBtn">Cart</button>
+				<button class="header__button login" id="loginBtn">Login</button>
 				<div class="header__burger">
 					<span></span>
 					<span></span>
@@ -107,6 +108,19 @@
 						<div class="item__price">$99</div>
 						<div class="item__title">Cross fitness Classes</div>
 					</div>
+					<div class="slide__item">
+						<div class="item__price">$99</div>
+						<div class="item__title">Sunday Boxing Classes</div>
+					</div>
+					<div class="slide__item">
+						<div class="item__price">$99</div>
+						<div class="item__title">Kickboxing Classes</div>
+					</div>
+					<div class="slide__item">
+						<div class="item__price">$99</div>
+						<div class="item__title">Cross fitness Classes</div>
+					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -157,13 +171,17 @@
 					<div class="about__info__bottom">
 						<div class="sign"></div>
 						<div class="socials">
-							<i class="fab fa-facebook-f"></i>
-							<i class="fab fa-twitter"></i>
-							<i class="fab fa-instagram"></i>
+							<a target="blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+							<a target="blank" href="https://www.twitter.com/"><i class="fab fa-twitter"></i>
+							</a>
+							<a target="blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i>
+							</a>
 						</div>
 					</div>
 				</div>
-				<div class="about__video"></div>
+				<div class="about__video">
+					<button id="videoBtn"><i class="fas fa-play"></i></button>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -176,7 +194,7 @@
 					<div class="trial__title">30 DAY FREE TRIAL</div>
 					<div class="trial__descr">Sign up for your free 3-day trial today!All of you are welcome</div>
 					<form class="trial__form" action="#">
-						<input type="text" placeholder="Your name">
+						<input id="userName" type="text" placeholder="Your name">
 						<input type="email" placeholder="Email address">
 						<input type="number" placeholder="Phone number">
 						<!-- <label for="checkboxes"></label>
@@ -202,7 +220,7 @@
 							<span>Others</span>
 							</label>
 						</div>
-						<button class="trial__prefer-btn" >Start your free trial</button>
+						<button id="trialBtn" class="trial__prefer-btn" >Start your free trial</button>
 					</div>
 				</div>
 			</div>
@@ -229,6 +247,19 @@
 						<div class="item__price">02 Sep</div>
 						<div class="item__title">Amateur MMA Championship</div>
 					</div>
+					<div class="slide__item">
+						<div class="item__price">12 Aug</div>
+						<div class="item__title">Kids kickboxing tournament</div>
+					</div>
+					<div class="slide__item">
+						<div class="item__price">18 Aug</div>
+						<div class="item__title">Super Fight League</div>
+					</div>
+					<div class="slide__item">
+						<div class="item__price">02 Sep</div>
+						<div class="item__title">Amateur MMA Championship</div>
+					</div>
+
 				</div>					
 			</div>
 		</div>
@@ -244,9 +275,23 @@
 				</div>
 				<div class="reviews__info">
 					<div class="reviews__title">Customer Reviews</div>
-					<div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </div>
-					<div class="reviews__author">Hanna Gover</div>
-					<div class="reviews__city">Texas</div>
+					<div class="reviews__slides">
+						<div class="reviews__slide">
+							<div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </div>
+							<div class="reviews__author">Hanna Gover</div>
+							<div class="reviews__city">Texas</div>
+						</div>
+						<div class="reviews__slide">
+							<div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </div>
+							<div class="reviews__author">Hanna Gover</div>
+							<div class="reviews__city">Texas</div>
+						</div>
+						<div class="review__slide">
+							<div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </div>
+							<div class="reviews__author">Hanna Gover</div>
+							<div class="reviews__city">Texas</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -264,14 +309,32 @@
 				</div>
 				<div class="blogs__item">
 					<img src="img/img.png" alt="#">
-					<div class="blogs__item-date">10-Oct-2018</div>
-					<div class="blogs__item-title">Motivation mania</div>
+					<div class="blogs__item-date">11-Nov-2018</div>
+					<div class="blogs__item-title">Tales to Get Inspired From</div>
+					<div class="blogs__item-descr">Long established fact that a reade</div>
+				</div>
+				<div class="blogs__item">
+					<img src="img/img.png" alt="#">
+					<div class="blogs__item-date">12-Dec-2018</div>
+					<div class="blogs__item-title">Self-Motivation Training</div>
 					<div class="blogs__item-descr">Long established fact that a reade</div>
 				</div>
 				<div class="blogs__item">
 					<img src="img/img.png" alt="#">
 					<div class="blogs__item-date">10-Oct-2018</div>
 					<div class="blogs__item-title">Motivation mania</div>
+					<div class="blogs__item-descr">Long established fact that a reade</div>
+				</div>
+				<div class="blogs__item">
+					<img src="img/img.png" alt="#">
+					<div class="blogs__item-date">11-Nov-2018</div>
+					<div class="blogs__item-title">Tales to Get Inspired From</div>
+					<div class="blogs__item-descr">Long established fact that a reade</div>
+				</div>
+				<div class="blogs__item">
+					<img src="img/img.png" alt="#">
+					<div class="blogs__item-date">12-Dec-2018</div>
+					<div class="blogs__item-title">Self-Motivation Training</div>
 					<div class="blogs__item-descr">Long established fact that a reade</div>
 				</div>
 			</div>
@@ -285,9 +348,9 @@
 					<div class="footer__top-logo"></div>
 					<div class="footer__top-descr">Boxing trainer</div>
 					<div class="footer__top-socials">
-						<i class="fab fa-facebook-square"></i>
-						<i class="fab fa-twitter-square"></i>
-						<i class="fab fa-instagram-square"></i>	
+						<a href="https:/www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+						<a href="https:/www.twitter.com/" target="blank"><i class="fab fa-twitter-square"></i></a>
+						<a href="https:/www.twitter.com/" target="blank"<i class="fab fa-instagram-square"></i></a>
 					</div>
 				</div>
 				<div class="footer__top-block ">
@@ -322,6 +385,67 @@
 		</div>
 	</footer>
 
+	<!-- CART POPUP -->
+
+	<div id="cartPopup" class="cartModal">
+		<!-- Modal content -->
+		<div class="cartModal-content">
+			<span class="cartClose">&times;</span>
+			<div>Your cart is empty..</div>
+			<img src="img/sad.jpeg" alt="#">
+		</div>
+	</div>
+
+	<!-- LOGIN POPUP -->
+
+	<div id="loginPopup" class="loginModal">
+		<!-- Modal content -->
+		<div class="loginModal-content">
+			<span class="loginClose">&times;</span>
+			<div>Login / Registration</div>
+
+			<div class="forms">
+				<form class="login-form" action="#">
+					<input type="text" placeholder="Username / E-mail">
+					<input type="password" placeholder="Password">
+					<button>Login</button>
+				</form>
+				<form class="login-form" action="#">
+					<input type="text" placeholder="Username">
+					<input type="email" placeholder="E-mail">
+					<input type="number" placeholder="Phone number">
+					<input type="password" placeholder="Password">
+					<button>Registration</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- VIDEO POPUP -->
+
+	<div id="videoPopup" class="videoModal">
+		<!-- Modal content -->
+			<iframe class="videoModal-content" width="854" height="480" src="https://www.youtube.com/embed/qN3OueBm9F4?autoplay=1" frameborder="0" allowfullscreen>
+			</iframe>
+			<span class="videoClose">&times;</span>
+	</div>
+
+	<!-- TRIAL POPUP -->
+
+	<div id="trialPopup" class="trialModal">
+		<!-- Modal content -->
+		<div class="trialModal-content">
+			<span class="trialClose">&times;</span>
+			<div>trial</div>
+			<div id="elm1"></div>
+
+		</div>
+	</div>	
+
 	<script src="https://kit.fontawesome.com/83c9d43731.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+
 </body>
 </html>
