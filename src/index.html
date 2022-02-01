@@ -195,10 +195,8 @@
 					<div class="trial__descr">Sign up for your free 3-day trial today!All of you are welcome</div>
 					<form class="trial__form" action="#">
 						<input id="userName" type="text" placeholder="Your name">
-						<input type="email" placeholder="Email address">
-						<input type="number" placeholder="Phone number">
-						<!-- <label for="checkboxes"></label>
-						<input type="radio" id="checkboxes"> -->
+						<input type="email" id="userEmail" placeholder="Email address">
+						<input type="number" id="userPhone" placeholder="Phone number">
 					</form>
 					<div class="trial__prefer">
 						<div class="trial__prefer-title">The courses you prefer</div>
@@ -220,7 +218,7 @@
 							<span>Others</span>
 							</label>
 						</div>
-						<button id="trialBtn" class="trial__prefer-btn" >Start your free trial</button>
+						<button id="trialBtn" class="trial__prefer-btn">Start your free trial</button>
 					</div>
 				</div>
 			</div>
@@ -269,9 +267,9 @@
 		<div class="container">
 			<div class="reviews__inner">
 				<div class="reviews__squares">
-					<span></span>
-					<span></span>
-					<span></span>
+					<div class="span"></div>
+					<div class="span"></div>
+					<div class="span"></div>
 				</div>
 				<div class="reviews__info">
 					<div class="reviews__title">Customer Reviews</div>
@@ -385,6 +383,8 @@
 		</div>
 	</footer>
 
+
+
 	<!-- CART POPUP -->
 
 	<div id="cartPopup" class="cartModal">
@@ -436,9 +436,10 @@
 		<!-- Modal content -->
 		<div class="trialModal-content">
 			<span class="trialClose">&times;</span>
-			<div>trial</div>
+			<div>Information</div>
 			<div id="elm1"></div>
-
+			<div id="elm2"></div>
+			<div id="elm3"></div>
 		</div>
 	</div>	
 

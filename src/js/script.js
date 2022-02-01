@@ -6,14 +6,29 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		arrows: true
 	});
+
 	$('.reviews__slides').slick({
-		infinite: true,
+		infinite: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		vertical: true,
+		asNavFor: '.reviews__squares',
 		// arrows: true,
 		verticalSwiping: true
 	});
+
+	$('.reviews__squares').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.reviews__slides',
+		centerMode: true,
+		vertical: true,
+		infinite: true,
+		verticalSwiping: true,
+		focusOnSelect: true
+	});
+
+
 	$('.blogs__carousel').slick({
 		infinite: false,
 		slidesToShow: 3,
@@ -23,25 +38,6 @@ $(document).ready(function(){
 });
 
 
-// $(document).ready(function(){
-// 	$('.reviews__slides').slick({
-// 		infinite: true,
-// 		slidesToShow: 1,
-// 		slidesToScroll: 1,
-// 		vertical: true,
-// 		// arrows: true,
-// 		verticalSwiping: true
-// 	});
-// });
-
-// $(document).ready(function(){
-// $('.blogs__carousel').slick({
-// 	// infinite: true,
-// 	slidesToShow: 1,
-// 	slidesToScroll: 1,
-// 	arrows: true
-// });
-// });
 
 
 
@@ -142,10 +138,17 @@ window.onclick = function(event) {
 
 
 
-
 trialForm = function() {
-	var valInfo = document.getElementById('userName').value;
-	document.getElementById('elm1').innerHTML="Вы ввели: "+valInfo;
+	var valName = document.getElementById('userName').value;
+	var valEmail = document.getElementById('userEmail').value;
+	var valPhone = document.getElementById('userPhone').value;
+	
+	document.getElementById('elm1').innerHTML="Вы ввели name: "+valName;
+	document.getElementById('elm2').innerHTML="Вы ввели email: "+valEmail;
+	document.getElementById('elm3').innerHTML="Вы ввели phone: "+valPhone;
+
 };
   
 trialForm();
+
+
